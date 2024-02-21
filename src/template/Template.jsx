@@ -1,17 +1,12 @@
 import styled from 'styled-components';
-const NavBar = styled.nav`
-  background: #3a3a55;
-  grid-area: nav;
-  padding:0.25rem;
-  color:white;
-  height: 10vh;
-  width: 100%;
-`;
+import NavBar from '../navBar/NavBar';
+import Main from '../main/Main';
+
 const ContentBox = styled.div`
   display: flex;
   flex-direction: row;
-  background:pink;
-  min-height: 80vh;
+  background: red;
+  min-height: 30vh;
 `;
 const Content1= styled.div`
   background: #a6b8b9;
@@ -34,10 +29,12 @@ const Footer= styled.footer`
   margin-top: auto;
 `;
 
-function Menu() {
+
+function Template() {
   return (
     <div>
-     <NavBar>NavBAr</NavBar>
+     <NavBar />
+     <Main/>
      <ContentBox>
         <Content1>Content1</Content1>
         <Content2>Content2</Content2>
