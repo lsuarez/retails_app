@@ -5,7 +5,7 @@ import Main from '../main/Main';
 const ContentBox = styled.div`
   display: flex;
   flex-direction: row;
-  background: red;
+  background: white;
   min-height: 30vh;
 `;
 const Content1= styled.div`

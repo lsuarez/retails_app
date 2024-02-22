@@ -4,21 +4,16 @@ import React from 'react';
 
 const NavBar2 = styled.nav`
   background: white;
-  grid-area: nav;
   padding:0.25rem;
-  height: 10vh;
-  width: 100%;
   display: flex;
   flex-direction: row;
 `;
 const Button = styled.button`
     background-color: #04AA6D; /* Green */
-    border: none;
     color: white;
-    padding: 15px 32px;
+    border: none;
+    padding: 15px 30px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     flex :1;
 `;

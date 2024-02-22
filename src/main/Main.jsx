@@ -1,19 +1,23 @@
 import styled from 'styled-components';
 import background from '../img/main.png';
-const Background = styled.main`
-  display: flex;
-  flex-direction: row;
-  min-height: 50vh;
-  background: url(${background});
-  width: 100%;
-  height: 450px;
-`;
+import Search from '../search/Search';
 
+const Background = styled.main`
+  
+display: flex;
+justify-content: center;
+align-items:center;
+background: url(${background});
+height: 450px;
+position: relative;
+ 
+`;
+ 
 function Main(){
     return (
-        <div>
-            <Background/>
-        </div>
+        <Background>
+            <Search/>
+        </Background>
     );
 }
 export default Main;
