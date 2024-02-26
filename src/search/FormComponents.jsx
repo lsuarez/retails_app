@@ -9,22 +9,25 @@ export const StyledForm = styled.form`
 export const StyledLabel = styled.label`
   display: block;
   margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
   font-weight: bold;
+  font-size: small;
+  font-family: Arial;
   color: ${props => props.invalid ? 'red' : 'black'};
 `
 
 export const StyledInput = styled.input`
-  width: 80%;
+  width: 91%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  fontFamily: Arial;
 `
 export const StyledInputSmall = styled.input`
   display:flex;
   width: 20%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
   margin-left: 10px;
   margin-right: 10px;
 `
@@ -37,7 +40,10 @@ export const StyledSelect = styled.select`
 
 export const StyledButton = styled.button`
   background-color: black;
+  justify-content: center;
   display:flex;
+  align-items: center;
+  width: 98%;
   color: white;
   padding: 10px;
   margin-top: 10px;
@@ -53,9 +59,13 @@ export const StyledButton = styled.button`
   opacity: ${props => !props.enabled ? 0.5 : 1};
 `
 export const ColumnBox = styled.div`
+    justify-content: center;
     display:flex;
+    align-items: center;
     flex-direction: row;
     padding:0.50rem;
+
+
 `
 export const StyledAlert = styled.div`
   padding: 10px;
@@ -64,3 +74,9 @@ export const StyledAlert = styled.div`
   margin-top: 10px;
   border-radius: 5px;
   `;
+
+  export const RowBox = styled.div`
+    display:flex;
+    flex-direction: column;
+    padding:0.50rem;
+`

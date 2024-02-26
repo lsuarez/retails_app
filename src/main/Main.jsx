@@ -8,7 +8,7 @@ display: flex;
 justify-content: center;
 align-items:center;
 background: url(${background});
-height: 450px;
+height: 300px;
 position: relative;
  
 `;
